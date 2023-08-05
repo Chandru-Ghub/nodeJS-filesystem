@@ -18,7 +18,7 @@ app.get('/createfile',(req,res,)=>{
     const filename = `${content}.txt`;
     const fp = path.join(folderpath,filename)
     fs.writeFileSync(fp,content)
-    res.json({data:`foldername${content} path${folderpath}`})
+    res.json({data:`foldername: ${content} path: ${folderpath}`})
     }
     catch(err){
         res.status(500).json({Error})
