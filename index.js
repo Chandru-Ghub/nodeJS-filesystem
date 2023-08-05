@@ -8,7 +8,7 @@ const folderpath = path.join(__dirname,'data')
 
 ///Route to acess the fileSystem 
 app.get('/',(req,res)=>{
-    res.send('Write: /createfile to create the file \n Write: /readfile to read the file')
+    res.send('Write: /createfile to create the file (OR) Write: /readfile to read the file')
 })
 
 //Creating a file inside the folder
